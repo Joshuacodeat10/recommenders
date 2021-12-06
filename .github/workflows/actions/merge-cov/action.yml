@@ -35,7 +35,7 @@ runs:
     shell: bash
     run: |
       python -m coverage combine .coverage*
-      python -m coverage report
+      python -m coverage report -i
       python -m coverage xml -i
       
   - name: Show merged report
